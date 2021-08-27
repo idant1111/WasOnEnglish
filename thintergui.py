@@ -92,16 +92,16 @@ def clicked():
     b = lbl.configure(text= ""+l[0])
     c2c(l[0])
     l.clear()
-    popup_showinfo()
-
+    messagebox.showinfo("הידד", "הפלט הועתק בהצלחה")
+    
 def c2c(word): #fixed
 
     window.clipboard_clear()
     window.clipboard_append(word)
     window.update()
 
-def popup_showinfo():
-    messagebox.showinfo("הצלחה", "הפלט הועתק ותורגם בהצלחה")
+
+    
 
     
 
