@@ -4,7 +4,7 @@ window = Tk()
 
 window.title("שיט הייתי באנגלית 1.0")
 
-window.geometry('230x100')
+window.geometry('200x100')
 window.resizable(width=False, height=False)
 
 lbl = Label(window, text="הפלט הזה יהפוך למתורגם")
@@ -92,6 +92,7 @@ def clicked():
     b = lbl.configure(text= ""+l[0])
     c2c(l[0])
     l.clear()
+    popup_showinfo()
 
 def c2c(word): #fixed
 
@@ -100,7 +101,7 @@ def c2c(word): #fixed
     window.update()
 
 def popup_showinfo():
-    showinfo("Window", "Hello World!")
+    messagebox.showinfo("הצלחה", "הפלט הועתק ותורגם בהצלחה")
 
     
 
@@ -108,7 +109,7 @@ btn = Button(window, text="תרגום", command=clicked)
 
 btn.grid(column=4, row=0)
 
-lbl2 = Label(window, text="לאחר התרגום, הפלט מועתק אוטומטית")
+lbl2 = Label(window, text="עידן טייגפלד - 2021")
 lbl2.grid(column=4, row=8)
 
 
