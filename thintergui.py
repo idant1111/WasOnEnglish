@@ -2,17 +2,18 @@ from tkinter import *
 
 window = Tk()
 
-window.title("Welcome to LikeGeeks app")
+window.title("שיט הייתי באנגלית 1.0")
 
-window.geometry('350x200')
+window.geometry('230x100')
+window.resizable(width=False, height=False)
 
-lbl = Label(window, text="translate will appear here")
+lbl = Label(window, text="הפלט הזה יהפוך למתורגם")
 
-lbl.grid(column=0, row=5)
+lbl.grid(column=4, row=5)
 
 txt = Entry(window,width=30)
 
-txt.grid(column=0, row=15)
+txt.grid(column=4, row=15)
 
 l= []
 
@@ -89,22 +90,29 @@ def clicked():
     res =  "" + txt.get()
     a = processer(res)
     b = lbl.configure(text= ""+l[0])
-    c2c(b)
+    c2c(l[0])
     l.clear()
 
-def c2c(word): #FIX THIS PART - copy to clipboard fail
+def c2c(word): #fixed
 
     window.clipboard_clear()
     window.clipboard_append(word)
     window.update()
 
-    
+def popup_showinfo():
+    showinfo("Window", "Hello World!")
 
     
 
-btn = Button(window, text="Click Me", command=clicked)
+btn = Button(window, text="תרגום", command=clicked)
 
-btn.grid(column=0, row=0)
+btn.grid(column=4, row=0)
+
+lbl2 = Label(window, text="לאחר התרגום, הפלט מועתק אוטומטית")
+lbl2.grid(column=4, row=8)
+
+
+
 
 window.mainloop()
 
