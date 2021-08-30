@@ -19,3 +19,5 @@ enjoy!
 
 I created it so anyone could take english QWERTY layout and adapt it to their native QWERTY language layout
 ![alt text](https://github.com/idant1111/WasOnEnglish/blob/main/example01.png)
+in action:
+![alt text](https://github.com/idant1111/WasOnEnglish/blob/main/example02.png)
