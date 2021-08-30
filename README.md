@@ -13,9 +13,9 @@ Use this script easily with 3 steps:
 
 and there you have it
 
-your text was ressurected, without you writing the entire thing down onec again
+your text was "ressurected", without you writing the entire thing down onec again :)
 
 enjoy!
 
-I created it so anyone could take english QWERTY layout and adapt it to their native QWERTY language layout
+ # I created it so anyone could take english QWERTY layout and adapt it to their native QWERTY language layout
 
