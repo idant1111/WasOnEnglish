@@ -2,18 +2,18 @@ from tkinter import *
 
 window = Tk()
 
-window.title("שיט הייתי באנגלית 1.0")
+window.title("WasOnEnglish")
 
-window.geometry('200x100')
+window.geometry('180x100')
 window.resizable(width=False, height=False)
 
 lbl = Label(window, text="הפלט הזה יהפוך למתורגם")
 
-lbl.grid(column=4, row=5)
+lbl.grid(column=0, row=5)
 
 txt = Entry(window,width=30)
 
-txt.grid(column=4, row=15)
+txt.grid(column=0, row=15)
 
 l= []
 
@@ -92,7 +92,7 @@ def clicked():
     b = lbl.configure(text= ""+l[0])
     c2c(l[0])
     l.clear()
-    messagebox.showinfo("הידד", "הפלט הועתק בהצלחה")
+
     
 def c2c(word): #fixed
 
@@ -103,20 +103,14 @@ def c2c(word): #fixed
 
     
 
-    
-
 btn = Button(window, text="תרגום", command=clicked)
 
-btn.grid(column=4, row=0)
+btn.grid(column=0, row=0)
 
-lbl2 = Label(window, text="עידן טייגפלד - 2021")
-lbl2.grid(column=4, row=8)
+lbl2 = Label(window, text="שיט, הייתי על אנגלית")
+lbl2.grid(column=0, row=8)
 
 
 
 
 window.mainloop()
-
-
-
-
