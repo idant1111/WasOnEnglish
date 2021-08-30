@@ -1,5 +1,5 @@
 # WasOnEnglish
-The end to the annoying i was on english layout and not hebrew
+#The end to the annoying i was on english layout and not hebrew
 
 Every hebrew speaker and writer knows how annoying it is to write an entire text - only to find out it was in the wrong keyboard layout
 
@@ -17,5 +17,5 @@ your text was "ressurected", without you writing the entire thing down onec agai
 
 enjoy!
 
- # I created it so anyone could take english QWERTY layout and adapt it to their native QWERTY language layout
+I created it so anyone could take english QWERTY layout and adapt it to their native QWERTY language layout
 
