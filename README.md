@@ -17,6 +17,8 @@ your text was "ressurected", without you writing the entire thing down onec agai
 
 enjoy!
 
+# UPDATE 2.0 - Added support to hebrew to english layout
+
 I created it so anyone could take english QWERTY layout and adapt it to their native QWERTY language layout
 
 *# Screenshots:*
