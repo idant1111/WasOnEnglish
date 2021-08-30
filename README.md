@@ -3,7 +3,7 @@
 
 Every hebrew speaker and writer knows how annoying it is to write an entire text - only to find out it was in the wrong keyboard layout
 
-I was - no more, friends.
+no more, friends :)
 
 Use this script easily with 3 steps:
 
