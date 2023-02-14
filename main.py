@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 import pyperclip
 import keyboard
 from keyboard_dict import keyboard_dict
@@ -46,6 +47,8 @@ def run_button_function():
 
 # Initialize the program with a copied string saying "clip init"
 pyperclip.copy("clip init")
+messagebox.showinfo(title="How to use", message=f"Run the program with ctrl+shift+i - shift between english and hebrew")
+
 
 # Create the tkinter window
 root = tk.Tk()
@@ -63,6 +66,7 @@ keyboard.add_hotkey('ctrl+shift+i', run_button_function, suppress=True)
 
 # Start the tkinter event loop
 root.mainloop()
+
 
 # Stop the hotkey listener when the window is closed
 keyboard.unregister_hotkey('ctrl+shift+i')
