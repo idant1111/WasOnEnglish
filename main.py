@@ -49,12 +49,14 @@ pyperclip.copy("clip init")
 
 # Create the tkinter window
 root = tk.Tk()
+root.title('WasOnEnglish')
+
+root.resizable(0,0)
 
 # Set the window to start minimized
 
-
 # Create a label for the instructions
-instructions_label = tk.Label(root, text="Click the button to transform the highlighted text")
+instructions_label = tk.Label(root, text="script init complete. \n start with ctrl+shift+i")
 instructions_label.pack()
 
 # Create a button to transform the text
