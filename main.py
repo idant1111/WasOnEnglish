@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import messagebox
 import pyperclip
 import keyboard
 from keyboard_dict import keyboard_dict
@@ -15,7 +14,7 @@ def detect_input_language(text):
     elif has_hebrew_chars and not has_english_chars:
         return "Hebrew"
     else:
-        return "Unknown"
+        return "Mixed / Unknown"
 
 # Define the function to convert the text
 def convert_text(original_text):
@@ -37,7 +36,7 @@ def transform_text():
     input_language = detect_input_language(original_text)
     converted_text = convert_text(original_text)
     copy_transformed_text(converted_text)
-    instructions_label.config(text=f"Input language: {input_language}, Click the button to transform the highlighted text")
+    instructions_label.config(text=f"changed from: {input_language}")
     print("Original text:", original_text)
     print("Transformed text:", converted_text)
 
@@ -47,11 +46,12 @@ def run_button_function():
 
 # Initialize the program with a copied string saying "clip init"
 pyperclip.copy("clip init")
-messagebox.showinfo(title="How to use", message=f"Run the program with ctrl+shift+i - shift between english and hebrew")
-
 
 # Create the tkinter window
 root = tk.Tk()
+
+# Set the window to start minimized
+
 
 # Create a label for the instructions
 instructions_label = tk.Label(root, text="Click the button to transform the highlighted text")
@@ -61,12 +61,11 @@ instructions_label.pack()
 transform_button = tk.Button(root, text="Transform", command=run_button_function)
 transform_button.pack()
 
-# Register the hotkey Shift+I
+# Register the hotkey Ctrl+Shift+I
 keyboard.add_hotkey('ctrl+shift+i', run_button_function, suppress=True)
 
 # Start the tkinter event loop
 root.mainloop()
-
 
 # Stop the hotkey listener when the window is closed
 keyboard.unregister_hotkey('ctrl+shift+i')
